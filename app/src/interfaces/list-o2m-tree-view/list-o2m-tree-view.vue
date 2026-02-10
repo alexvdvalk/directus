@@ -24,6 +24,8 @@ const props = withDefaults(
 		enableCreate?: boolean;
 		enableSelect?: boolean;
 		filter?: Filter | null;
+		sort?: string;
+		sortDirection?: string;
 	}>(),
 	{
 		value: () => [],
@@ -33,6 +35,8 @@ const props = withDefaults(
 		enableSelect: true,
 		filter: null,
 		displayTemplate: undefined,
+		sort: undefined,
+		sortDirection: '+',
 	},
 );
 
